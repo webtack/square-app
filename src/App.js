@@ -21,8 +21,7 @@ const App = () => {
   const isLoading = useSelector(selectIsLoading);
 
   return (
-    <Container>
-      <div className="App">
+    <Container className="App">
         {error && <Alert severity="error"> {error} </Alert>}
         {isLoading && <LinearProgress />}
 
@@ -35,7 +34,6 @@ const App = () => {
             <ResultList />
           </Grid>
         </Grid>
-      </div>
     </Container>
   );
 };
